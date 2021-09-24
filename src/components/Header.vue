@@ -1,5 +1,5 @@
 <template>
-  <header>
+  <header class="container">
     <a href="#" class="header-logo">
       <img src="../assets/img/dc-logo.png" alt="">
     </a>
@@ -53,7 +53,7 @@ export default {
 @import "../style/variabiles.scss";
 
 header{
-  width: 1000px;
+  
   height: 80px;
   display: flex;
   justify-content: space-between;
@@ -61,7 +61,7 @@ header{
   margin: 0 auto;
 }
 
-img{
+header img{
   height: 50px;
 }
 
@@ -70,13 +70,15 @@ ul{
   list-style: none;
   text-decoration: none;
 }
-
+li {
+  line-height: 76px;
+}
 li a{
+  display: inline-block;
   margin: 0px 15px;
-  padding-bottom: calc(100% - 45px);
-  
+
   text-decoration: none;
-  font-family: 'Roboto';
+  font-family: $navFont;
   font-weight: 500;
   font-size: 0.7rem;
   color: $navFontColor;
