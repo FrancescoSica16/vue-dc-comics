@@ -44,6 +44,71 @@
 <script>
 export default {
   name: 'Header',
+
+  data: function () {
+    return {
+      // qui scriviamo quello che scriveremo nel data
+      index:0,
+      links:[
+        {
+          text: "Characters",
+          url: "#",
+          current: false,
+        },
+         {
+          text: "Comics",
+          url: "#",
+          current: false,
+        },
+         {
+          text: "Movies",
+          url: "#",
+          current: false,
+        },
+         {
+          text: "TV",
+          url: "#",
+          current: false,
+        },
+         {
+          text: "Games",
+          url: "#",
+          current: false,
+        },
+         {
+          text: "collectibles",
+          url: "#",
+          current: false,
+        },
+         {
+          text: "Video",
+          url: "#",
+          current: false,
+        },
+         {
+          text: "Fans",
+          url: "#",
+          current: false,
+        },
+         {
+          text: "News",
+          url: "#",
+          current: false,
+        },
+         {
+          text: "Shop",
+          url: "#",
+
+          current: false,
+        },
+
+      ]
+    }
+ },
+
+ methods:{
+
+ }
   
 }
 </script>
