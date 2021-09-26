@@ -5,35 +5,9 @@
     </a>
     <nav>
       <ul>
-        <li>
-          <a href="#">Characters</a>
-        </li>
-        <li>
-          <a href="#" class="active">Comics</a>
-        </li>
-        <li>
-          <a href="#">Movies</a>
-        </li>
-        <li>
-          <a href="#">TV</a>
-        </li>
-        <li>
-          <a href="#">Games</a>
-        </li>
-          <li>
-          <a href="#">collectibles</a>
-        </li>
-        <li>
-          <a href="#">Video</a>
-        </li>
-        <li>
-          <a href="#">Fans</a>
-        </li>
-          <li>
-          <a href="#">News</a>
-        </li>
-        <li>
-          <a href="#">Shop</a>
+        <li v-for="(link, index) in links" :key="index">
+          <a :class="{active : link.current == true}">{{link.text}}</a> 
+           <!-- come inserisco l'href  -->
         </li>
       </ul>
     </nav>
@@ -58,7 +32,7 @@ export default {
          {
           text: "Comics",
           url: "#",
-          current: false,
+          current: true,
         },
          {
           text: "Movies",
