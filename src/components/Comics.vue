@@ -1,25 +1,41 @@
 <template>
     <div class="comic-item">
-
         <img :src="image" :alt="title">
-        <h2> {{ title }} </h2>
-        
+        <h4> {{ title }} </h4>        
     </div>
 </template>
 
 <script>
     export default {
         name:"Comics",
-        prop: ['title','image'],
+        props: ['title','image'],
     }
 </script>
 
 <style lang="scss" scoped>
+ @import "../style/variabiles.scss";
     .comic-item{
-        flex-basis: calc(100% / 6 - 18px); // da chiarire il funzionamento
-        height: 150px;
-        background-color: blueviolet;
-        border: 1px solid black;
-        margin: 3px;
+        
+        flex-basis: calc(100% / 6 - 24px ); // da chiarire il funzionamento 
+        
+           
+        margin: 6px;
+
+        img {
+            width: 100%;
+            aspect-ratio: 1 / 1;
+            object-fit: cover;
+            object-position: top;
+            margin-bottom: 10px;
+        }
+
+        h4{
+           
+            text-transform: uppercase;
+            font-family: $mainFont;
+            font-size: 0.7rem;
+            font-weight: 500;
+            color: $itemComicTitle;
+        }
     }
 </style>

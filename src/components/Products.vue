@@ -112,6 +112,7 @@ export default {
     flex-wrap: wrap;
     justify-content: center;
     margin: 0 auto;
+    padding: 40px 0;
 
     & h2{
       padding: 50px 0px;
