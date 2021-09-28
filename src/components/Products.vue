@@ -1,9 +1,12 @@
 <template>
-  <div id="main-block">
-    <div id="main-wrapper" class="container">
+  <div>
+    <div id="jumbotron">
 
-    <Comics v-for="(comic, index) in ComicsData" :key="index" :title="comic.series" :image="comic.thumb"/>
-
+    </div>
+    <div id="main-block">
+      <div id="main-wrapper" class="container">
+      <Comics v-for="(comic, index) in ComicsData" :key="index" :title="comic.series" :image="comic.thumb"/>
+      </div>
     </div>
   </div>
 </template>
@@ -29,6 +32,11 @@ export default {
 
 <style scoped lang="scss">
   @import "../style/variabiles.scss";
+  #jumbotron{
+    height: 300px;
+    
+    background-image: url(../assets/img/jumbotron.jpg);
+  }
   #main-block{
     background-color: black;
     
